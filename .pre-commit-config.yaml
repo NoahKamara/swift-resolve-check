@@ -1,0 +1,11 @@
+repos:
+  - repo: local
+    hooks:
+      - id: swift-resolve-check
+        name: Swift Package Resolve Check
+        entry: swift-resolve-check
+        language: script
+        pass_filenames: false
+        always_run: true
+        verbose: true
+        args: ["--package-path", "../Docsy/DDocsy/DocsyLib"]

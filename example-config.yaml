@@ -1,0 +1,8 @@
+repos:
+  - repo: https://github.com/noahkamara/swift-resolve-check
+    rev: main
+    hooks:
+      - id: swift-resolve-check
+        # Optionally pass args, e.g. --update or --package-path ExamplePackage
+        # args: [--update]
+

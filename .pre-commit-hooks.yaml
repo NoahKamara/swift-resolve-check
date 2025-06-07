@@ -1,0 +1,10 @@
+- id: swift-resolve-check
+  name: Swift Package Resolve Check
+  description: >
+    Ensures that 'swift package resolve' does not change Package.resolved, or updates it if configured. 
+    Use --fail (default) to block commits on change, or --update to auto-update. Supports custom package paths and swift executables.
+
+  entry: swift-resolve-check
+  language: script
+  pass_filenames: false
+  files: ^(Package\.swift|Package\.resolved)$
